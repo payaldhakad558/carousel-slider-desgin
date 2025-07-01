@@ -41,6 +41,8 @@
       left: 80px;
       display: flex;
       gap: 10px;
+    
+     
     }
     .top-controls button {
       padding: 8px 12px;
@@ -50,6 +52,9 @@
       cursor: pointer;
       font-size: 14px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    }
+    .top-controls button:hover{
+        background-color: teal;
     }
 
     .top-controls .active {
@@ -79,13 +84,21 @@
     }
 
     .bottom-carousel img {
-      width: 50px;
-      height: 50px;
+      width: 60px;
+      height: 60px;
       border-radius: 50%;
       border: 2px solid #eee;
       object-fit: cover;
       cursor: pointer;
     }
+    .bottom-carousel img:hover{
+      border: 3px solid red;
+      object-fit: cover;
+    }
+    /* .bottom-carousel  .active{
+        border: 3px solid red;
+        object-fit: cover;
+    } */
 
     .side-arrow{
       position: absolute;
@@ -103,6 +116,11 @@
       font-weight: bold;
       cursor: pointer;
     }
+    .side-arrow:hover{
+        background-color: teal;
+        color: white;
+
+    }
     .side-arrow-2{
         position: absolute;
         top: 50%;
@@ -119,6 +137,10 @@
         font-weight: bold;
         cursor: pointer;
     }
+    .side-arrow-2:hover{
+        background-color: teal;
+        color: white;
+    }
   </style>
 </head>
 <body>
@@ -127,8 +149,8 @@
 
     <div class="top-controls">
       <button>Flat 1</button>
-      <button class="active">Tour</button>
-      <button>Floor plan 3D</button>
+      <button class="">Tour</button>
+      <button class="">Floor plan 3D</button>
       <button>Model 360</button>
     </div>
 
@@ -138,15 +160,16 @@
      <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
    <div class="bottom-carousel">
-      <img src="Mama_Loca.jpg"  />
+      <img class="" src="Mama_Loca.jpg"  />
       <img src="Mangal_City_Mall.jpg" />
       <img src="Vidorra_EGO.jpg" />
-      <img src="Nexus_Indore_Central_Mall.jpg" />
-      <img src="Orbit_Mall.jpg" />
+      <img  src="Nexus_Indore_Central_Mall.jpg" />
+      <img  src="Orbit_Mall.jpg" />
       <img src="Phoenix_Citadel_Mall.jpg" />
       <img src="The_Eyry.jpg" />
       <img src="Treasure_Island_Mall.jpg" />
       <img src="Victoria_Club_Lounge.jpg" />
+      <img src="Zodiac_Mall.jpg"/>
     </div>
   </div>
   <div class="carousel-inner">
